@@ -4,9 +4,9 @@ The riemann solver file is supposed to be uploaded into the PATH/clawpack/rieman
 (1) _init_.py
 from . import Mu_I
 
-(2) setup.py
-one_d_riemann = ['Mu_I',
-                  ...
+(2) setup.py <br> 
+one_d_riemann = ['Mu_I',<br>
+                  ...<br>
                   
 (3) static.py
 num_eqn = {
