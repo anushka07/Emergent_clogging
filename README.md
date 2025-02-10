@@ -20,6 +20,6 @@ num_waves = { <br>
 
 ## References
 <a id="1">[1]</a> 
-Ketcheson, David I. and Mandli, Kyle T. and Ahmadia, Aron J. and Alghamdi, Amal and {Quezada de Luna}, Manuel and Parsani, Matteo and Knepley, Matthew G. and Emmett, Matthew (2012). 
+Ketcheson, David I. and Mandli, Kyle T. and Ahmadia, Aron J. and Alghamdi, Amal and Quezada de Luna, Manuel and Parsani, Matteo and Knepley, Matthew G. and Emmett, Matthew (2012). 
 PyClaw: Accessible, Extensible, Scalable Tools for Wave Propagation Problems. 
 SIAM Journal on Scientific Computing,34(4), C210--C231.
