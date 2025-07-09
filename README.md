@@ -34,7 +34,7 @@ The riemann solver file should be uploaded into PATH/clawpack/riemann/ and \_ini
 </ul>
 </ol>
 
-Once the riemann solver is added you can run the required python script from the `Simulation scripts` folder of the repository. The radially varying channel with a step input script `Clog_simulation_Step_ini_R_varying.py` should be run after running the MATLAB script `Steady_phi_R_vary.m` which generates the required `.mat` file which is the initial condition of the simulation.
+Once the riemann solver is added you can run the required python script from the `Simulation scripts` folder of the repository. The script `Clog_simulation_Step_ini_R_varying.py` should be run after running the MATLAB script `Steady_phi_R_vary.m` which generates the required `.mat` file acting as the initial condition of the simulation.
 
 ## References
 <a id="1">[1]</a> 
