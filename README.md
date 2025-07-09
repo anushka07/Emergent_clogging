@@ -27,7 +27,7 @@ The riemann solver file is supposed to be uploaded into the PATH/clawpack/rieman
 
 `num_eqn = {'Mu_I' : 1,` <br>
         `'Full_model' : 1,` <br>
-        `}`
+        `}`<br>
 `num_waves = {'Mu_I' : 3,`<br>
         `'Full_model' : 3,`<br>
         `}`
