@@ -4,25 +4,32 @@ The riemann solver file is supposed to be uploaded into the PATH/clawpack/rieman
 <ol>
 <li> 
   
-`_init_.py` <br>`from . import Mu_I` <br> 
+`_init_.py` <br>
+<ul>
+  
+  `from . import Mu_I` <br> 
 </li>
 
  <li> 
    
 `setup.py` <br> 
+<ul>
+
 `one_d_riemann = ['Mu_I',`<br>
-                  
+                  `]`
                   
 <li> 
 
   
 `static.py` <br>
+<ul>
+
 `num_eqn = {'Mu_I' : 1,` <br>
         `'Full_model' : 1,` <br>
-        
+        `}`
 `num_waves = {'Mu_I' : 3,`<br>
         `'Full_model' : 3,`<br>
-        
+        `}`
 </ol>
 ## References
 <a id="1">[1]</a> 
