@@ -8,6 +8,7 @@ The riemann solver file is supposed to be uploaded into the PATH/clawpack/rieman
 <ul>
   
   `from . import Mu_I` <br> 
+</ul>
 </li>
 
  <li> 
@@ -17,7 +18,7 @@ The riemann solver file is supposed to be uploaded into the PATH/clawpack/rieman
 
 `one_d_riemann = ['Mu_I',`<br>
                   `]`
-                  
+ </ul>                 
 <li> 
 
   
@@ -30,6 +31,7 @@ The riemann solver file is supposed to be uploaded into the PATH/clawpack/rieman
 `num_waves = {'Mu_I' : 3,`<br>
         `'Full_model' : 3,`<br>
         `}`
+</ul>
 </ol>
 ## References
 <a id="1">[1]</a> 
