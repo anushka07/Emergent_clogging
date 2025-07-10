@@ -1,5 +1,4 @@
-#!/usr/bin/env python
-# encoding: utf-8
+
 
 r"""
 =========================
@@ -9,9 +8,7 @@ Solve the Mass conservation equation:
 .. math:: 
     \frac{\partial R^2\phi}{\partial t} + \frac{\partial R^2 us \phi}{\partial z} = 0.
 
-
-The initial condition is constant, but after a short time a shock forms
-(due to the nonlinearity).
+Here we solve for q= R^2\phi. Since R is constant in this simulation q = \phi.
 """
 from __future__ import absolute_import
 import numpy as np
@@ -22,7 +19,7 @@ from clawpack import riemann
     
 
     
-
+# Function to setup problem with relevant parameters and solver. Specify output folder by setting outdir 
 def setup(use_petsc=0,kernel_language='Python',outdir='./_output_phimstepvary_',solver_type='classic',disable_output=False):
 
     if use_petsc:
@@ -102,7 +99,7 @@ def setup(use_petsc=0,kernel_language='Python',outdir='./_output_phimstepvary_',
     return claw
 
 
-
+# Can be used to plot using Iplotclaw - Clawpacks interactive plotting routine. We currently plot output files using matlab routine plotclaw1.m from visclaw package of Clawpack
 def setplot(plotdata):
     """ 
     Plot solution using VisClaw.
@@ -147,7 +144,7 @@ def add_true_solution(current_data):
    phi = q[0,:]/(R**2)
   
    
-   #plot(x,sin(x),'r')
+
    plot(x,phim,'r')
    plot(x,R,'b')
    plot(x,phi,'g' )
@@ -158,7 +155,6 @@ def add_true_solution(current_data):
 
 
 if __name__=="__main__":
-    #print('Line 95')
-    #x0=2
+
     from clawpack.pyclaw.util import run_app_from_main
     output = run_app_from_main(setup,setplot)
