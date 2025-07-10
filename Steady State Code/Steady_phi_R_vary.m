@@ -113,7 +113,7 @@ xlabel('z');ylabel('\phi')
 
 % Save for every new Da
 r_min = 1-Rc;
-save('Steady_Rvary_rc_0.5_phim0_0.65_mu1_0.3.mat','z','Da_arr','DP','p_arr','r_min','Pmin');
+save('Steady_phin_0.2_rc_05_Da_1e-2.mat','z','Da_arr','DP','p_arr','r_min','Pmin','pbar');
 
 
 
