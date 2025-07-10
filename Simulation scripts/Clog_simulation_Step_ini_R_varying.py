@@ -138,7 +138,7 @@ def setup(use_petsc=0,kernel_language='Python',outdir='./_output_Rstepvary_Step_
     state = pyclaw.State(domain,num_eqn,num_aux)
     state.mp = 2
     xc = state.grid.x.centers
-  
+ 
     mat = loadmat('Steady_phin_0.2_rc_05_Da_1e-2.mat')  # Loading steady state solution for phi = 0.2
     z = mat.get('z')
     phi = mat.get('pbar')
