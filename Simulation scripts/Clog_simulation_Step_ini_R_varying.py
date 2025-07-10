@@ -1,3 +1,13 @@
+r"""
+=========================
+
+Solve the Mass conservation equation:
+
+.. math:: 
+    \frac{\partial R^2\phi}{\partial t} + \frac{\partial R^2 us \phi}{\partial z} = 0.
+
+Here we solve for q= R^2\phi. 
+"""
 
 from __future__ import absolute_import
 import numpy as np
