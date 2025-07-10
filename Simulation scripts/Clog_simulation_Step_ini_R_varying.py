@@ -1,21 +1,4 @@
-#!/usr/bin/env python
-# encoding: utf-8
 
-r"""
-Burgers' equation
-=========================
-
-Solve the inviscid Burgers' equation:
-
-.. math:: 
-    q_t + \frac{1}{2} (q^2)_x = 0.
-
-This is a nonlinear PDE often used as a very simple
-model for fluid dynamics.
-
-The initial condition is sinusoidal, but after a short time a shock forms
-(due to the nonlinearity).
-"""
 from __future__ import absolute_import
 import numpy as np
 from numpy import pi,log
@@ -24,6 +7,7 @@ from clawpack import riemann
 import time
     
 start1 = time.time()
+# Function to output parameters \phi and \mu_w goes into _p file
 def particle_fraction(state):
     """ Compute phi from q (mu_w)  and store in state.p."""
     import numpy as np
@@ -108,8 +92,8 @@ def particle_fraction(state):
     
 
     
-
-def setup(use_petsc=0,kernel_language='Python',outdir='./_output_Rstepvary',solver_type='classic',disable_output=False):
+# Function to setup problem with relevant parameters and solver. Specify output folder by setting outdir 
+def setup(use_petsc=0,kernel_language='Python',outdir='./_output_Rstepvary_Step_input',solver_type='classic',disable_output=False):
 
     if use_petsc:
         import clawpack.petclaw as pyclaw
@@ -202,7 +186,7 @@ def setup(use_petsc=0,kernel_language='Python',outdir='./_output_Rstepvary',solv
     return claw
 
 
-
+# Can be used to plot using Iplotclaw - Clawpacks interactive plotting routine. We currently plot output files using matlab routine plotclaw1.m from visclaw package of Clawpack 
 def setplot(plotdata):
     """ 
     Plot solution using VisClaw.
@@ -246,7 +230,6 @@ def add_true_solution(current_data):
    phi = np.empty(q.shape)
    phi = q[0,:]/(R**2)   
    
-   #plot(x,sin(x),'r')
    plot(x,phim,'r')
    plot(x,R,'b')
    plot(x,phi,'g' )
@@ -257,7 +240,5 @@ def add_true_solution(current_data):
 
 
 if __name__=="__main__":
-    #print('Line 95')
-    #x0=2
     from clawpack.pyclaw.util import run_app_from_main
     output = run_app_from_main(setup,setplot)
