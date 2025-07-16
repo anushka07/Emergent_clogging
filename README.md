@@ -36,7 +36,14 @@ The riemann solver file should be uploaded into PATH/clawpack/riemann/ and \_ini
 
 Once the riemann solver is added you can run the required python script from the `Simulation scripts` folder of the repository. The script `Clog_simulation_Step_ini_R_varying.py` should be run after running the MATLAB script `Steady_phi_R_vary.m` which generates the required `.mat` file acting as the initial condition of the simulation.
 
-<video src="https://github.com/user-attachments/assets/508e44cc-ef77-4d71-b033-a93cb9cf2c07" width="180">
+
+
+https://github.com/user-attachments/assets/f1f2bd54-300b-44f3-8102-4c87c56f9dfb
+
+
+
+https://github.com/user-attachments/assets/a0d18267-fdf6-418b-84b9-421b2c588aad
+
 
 
 
